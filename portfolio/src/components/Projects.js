@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <Container>
+    <Container id="projects">
       <Title>
       Principais projetos:
       </Title>

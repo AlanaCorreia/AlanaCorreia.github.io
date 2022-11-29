@@ -1,13 +1,13 @@
-import { HeaderContainer, Logo, Row } from "../styles/Header";
+import { HeaderContainer, Link, Logo, Row } from "../styles/Header";
 
 function Header() {
   return (
-    <HeaderContainer>
+    <HeaderContainer id="about">
       <Logo>AC</Logo>
       <Row>
-        <p>Sobre</p>
-        <p>Skills</p>
-        <p>Projetos</p>
+        <Link href="#about">Sobre</Link>
+        <Link href="#skills">Skills</Link>
+        <Link href="#projects">Projetos</Link>
       </Row>
     </HeaderContainer>
   );

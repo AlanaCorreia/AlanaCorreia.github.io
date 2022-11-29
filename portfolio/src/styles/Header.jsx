@@ -15,6 +15,11 @@ export const HeaderContainer = styled.header`
   align-items: center;
 `
 
+export const Link = styled.a`
+  color: ${WHITE};
+  text-decoration: none;
+`
+
 export const Row = styled.div`
   padding: 0 1rem;
   width: calc(100% / 3);
@@ -23,7 +28,7 @@ export const Row = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  p {
+  a {
     transition: color 0.7s;
 
     :hover {
