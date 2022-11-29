@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { BROWN } from './Colors'
 
 export const Container = styled.div`
-  margin: 30vh auto;
+  /* margin: 30vh auto; */
+  height: 100vh;
 
   color: ${BROWN};
   display: flex;

@@ -26,5 +26,5 @@ export const Title = styled.p`
   color: ${BROWN};
   font-size: 2rem;
   text-align: justify;
-  margin-bottom: 4rem;
+  margin: 4rem auto;
 `
