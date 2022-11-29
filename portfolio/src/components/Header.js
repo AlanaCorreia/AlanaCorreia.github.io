@@ -1,13 +1,15 @@
+import { HeaderContainer, Logo, Row } from "../styles/Header";
+
 function Header() {
   return (
-    <header>
-      <p>AC</p>
-      <div>
+    <HeaderContainer>
+      <Logo>AC</Logo>
+      <Row>
         <p>Sobre</p>
         <p>Skills</p>
         <p>Projetos</p>
-      </div>
-    </header>
+      </Row>
+    </HeaderContainer>
   );
 }
 
