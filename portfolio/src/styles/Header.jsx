@@ -24,6 +24,8 @@ export const Row = styled.div`
   align-items: center;
 
   p {
+    transition: color 0.7s;
+
     :hover {
       color: ${BROWN};
       cursor: pointer;

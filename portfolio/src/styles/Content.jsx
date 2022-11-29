@@ -12,7 +12,7 @@ export const Container = styled.div`
 `
 
 export const Text = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.5rem;
   width: 45%;
 `
