@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import background from '../images/background.jpg';
+// import background from '../images/background.jpg';
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
-  body {
-    background-image: url(${background});
-  }
+  /* body {
+    background-image: url();
+  } */
 `

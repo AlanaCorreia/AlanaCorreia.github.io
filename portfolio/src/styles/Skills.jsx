@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { BROWN } from './Colors';
+import background from '../images/background.jpg';
 
 export const Container = styled.div`
   height: 100vh;
 
+  background-image: url(${background});
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

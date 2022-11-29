@@ -1,5 +1,5 @@
 import { ProjectContainer } from "../styles/ProjectCard";
-import { Container, IconContainer, Title } from "../styles/Skills";
+import { Container, Title } from "../styles/Skills";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
