@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LIGHT_BROWN, WHITE, BROWN } from './Colors'
+import { LIGHT_BROWN, WHITE, BROWN, GRAY } from './Colors'
 
 export const HeaderContainer = styled.header`
   height: 2.9rem;
@@ -17,6 +17,10 @@ export const HeaderContainer = styled.header`
 
 export const Link = styled.a`
   color: ${WHITE};
+  text-decoration: none;
+`
+
+export const Nav = styled.a`
   text-decoration: none;
 `
 
@@ -40,4 +44,24 @@ export const Row = styled.div`
 
 export const Logo = styled.p`
   padding: 0 2rem;
+`
+
+export const Column = styled.div`
+  position: fixed;
+  top: 80%;
+  right: 5%;
+  width: 2rem;
+  height: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+`
+export const BtnNav = styled.button`
+  color: ${GRAY};
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 25px;
 `
