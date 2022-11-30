@@ -14,7 +14,7 @@ import { Container, Icon, IconContainer, Title } from '../styles/Skills';
 function Skills() {
   return (
     <Container id="skills">
-      <Title>
+      <Title skill>
       Principais habilidades adquiridas ao longo da jornada:
       </Title>
       <IconContainer>

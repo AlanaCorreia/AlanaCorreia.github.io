@@ -28,5 +28,5 @@ export const Title = styled.p`
   color: ${BROWN};
   font-size: 2rem;
   text-align: justify;
-  margin: 4rem auto;
+  margin: ${({skill}) => skill ? '6rem auto' : '4rem auto' };
 `
