@@ -1,10 +1,10 @@
 import { Card, ProjectImage, ProjectName } from "../styles/ProjectCard";
 
-function ProjectCard() {
+function ProjectCard({name, image}) {
   return (
     <Card>
-      <ProjectName>Nome do projeto</ProjectName>
-      <ProjectImage>imagem do projeto</ProjectImage>
+      <ProjectName>{ name }</ProjectName>
+      <ProjectImage src={ image } alt="project image"/>
     </Card>
   );
 }

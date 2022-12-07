@@ -17,12 +17,17 @@ export const ProjectContainer = styled(IconContainer)`
 `
 
 export const ProjectName = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
+  color: ${BROWN};
 `
-export const ProjectImage = styled.p`
-  border: solid ${BROWN};
+export const ProjectImage = styled.img`
   padding: 1rem;
-  width: 240px;
-  height: 120px;
+  width: 360px;
+  height: 210px;
+
+  :hover {
+    transform: scale(1.1);
+  }
 `
+

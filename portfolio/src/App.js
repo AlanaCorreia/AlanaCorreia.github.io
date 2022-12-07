@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import Content from './components/Content';
 import Header from './components/Header';
@@ -6,6 +7,11 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 function App() {
+  console.log(window.location.href);
+
+  useEffect(() => {
+    console.log('a');
+  }, [Header, Navegator])
   return (
     <div className="App">
       <Header />
