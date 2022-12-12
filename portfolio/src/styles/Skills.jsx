@@ -3,7 +3,7 @@ import { BROWN } from './Colors';
 import background from '../images/background.jpg';
 
 export const Container = styled.div`
-  height: ${({projects}) => projects ? `auto` : '100vh'};
+  height: 100vh;
   background-image: url(${background});
   display: flex;
   flex-direction: column;
