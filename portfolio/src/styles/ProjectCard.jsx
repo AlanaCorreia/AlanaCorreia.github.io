@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import { BROWN } from './Colors';
 import { IconContainer } from './Skills';
 
-export const Card = styled.div`
+export const Card = styled.a`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 
   margin: 1.5rem;
   padding: 1rem;

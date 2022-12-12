@@ -13,11 +13,9 @@ function Projects() {
       Principais projetos:
       </Title>
       <ProjectContainer>
-        <ProjectCard name="Solar System" image={ solarsystem } />
-        <ProjectCard name="Wallet" image={ wallet } color={ GREEN } />
-        <ProjectCard name="App de Receitas - Versão Mobile" image={ projectrecipesapp } color={ PURPLE } mobile="mobile" />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard href="https://projectsolarsystem.netlify.app/" name="Solar System" image={ solarsystem } />
+        <ProjectCard href="https://projectwallet.netlify.app/" name="Wallet" image={ wallet } color={ GREEN } />
+        <ProjectCard href="https://projectrecipesapp.netlify.app/" name="App de Receitas - Versão Mobile" image={ projectrecipesapp } color={ PURPLE } mobile="mobile" />
       </ProjectContainer>
     </Container>
   );

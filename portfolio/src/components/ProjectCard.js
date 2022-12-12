@@ -1,8 +1,8 @@
 import { Card, ProjectImage, ProjectName } from "../styles/ProjectCard";
 
-function ProjectCard({name, image, color, mobile}) {
+function ProjectCard({href, name, image, color, mobile}) {
   return (
-    <Card>
+    <Card href={ href } target="_blank">
       <ProjectName>{ name }</ProjectName>
       <ProjectImage src={ image } alt="project image" color={ color } mobile={ mobile } />
     </Card>
