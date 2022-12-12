@@ -1,14 +1,17 @@
+import { useDispatch } from "react-redux";
+import setNav from "../store/actions";
 import { HeaderContainer, Link, Logo, Row } from "../styles/Header";
 
 function Header() {
+  const dispatch = useDispatch();
 
   return (
     <HeaderContainer id="about">
       <Logo>AC</Logo>
       <Row>
-        <Link href="#about">Sobre</Link>
-        <Link href="#skills">Skills</Link>
-        <Link href="#projects">Projetos</Link>
+        <Link onClick={() => dispatch(setNav('about'))} href="#about">Sobre</Link>
+        <Link onClick={() => dispatch(setNav('skills'))} href="#skills">Skills</Link>
+        <Link onClick={() => dispatch(setNav('projects'))} href="#projects">Projetos</Link>
       </Row>
     </HeaderContainer>
   );

@@ -8,14 +8,15 @@ export const Container = styled.div`
   background-image: url(${background});
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
 `
 export const IconContainer = styled.div`
   width: 50%;
+  height: 40%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 `
 
@@ -28,5 +29,5 @@ export const Title = styled.p`
   color: ${BROWN};
   font-size: 2rem;
   text-align: justify;
-  margin: ${({skill}) => skill ? '6rem auto' : '4rem auto' };
+  margin: ${({skill}) => skill ? 'none' : '4rem auto' };
 `

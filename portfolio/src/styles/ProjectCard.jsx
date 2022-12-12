@@ -8,8 +8,6 @@ export const Card = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
-  margin: 1.5rem;
   padding: 1rem;
 `
 export const ProjectContainer = styled(IconContainer)`
