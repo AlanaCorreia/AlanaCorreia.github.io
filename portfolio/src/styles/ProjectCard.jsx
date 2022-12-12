@@ -22,9 +22,11 @@ export const ProjectName = styled.p`
   color: ${BROWN};
 `
 export const ProjectImage = styled.img`
-  padding: 1rem;
-  width: 360px;
-  height: 210px;
+  border: ${({color}) => color ? `1px solid ${color}` : 'none'};
+  border-radius: 12px;
+  width: ${({mobile}) => mobile ? `200px` : `360px`};
+  height: ${({mobile}) => mobile ? `300px` : `210px`};
+  margin: 1rem auto;
 
   :hover {
     transform: scale(1.1);
