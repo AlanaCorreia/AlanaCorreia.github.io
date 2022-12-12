@@ -8,8 +8,8 @@ import { GREEN, PURPLE } from "../styles/Colors";
 
 function Projects() {
   return (
-    <Container id="projects">
-      <Title>
+    <Container projects id="projects">
+      <Title projects>
       Principais projetos:
       </Title>
       <ProjectContainer>

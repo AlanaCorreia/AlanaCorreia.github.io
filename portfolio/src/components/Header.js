@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import setNav from "../store/actions";
+import { setNav } from "../store/actions";
 import { HeaderContainer, Link, Logo, Row } from "../styles/Header";
 
 function Header() {

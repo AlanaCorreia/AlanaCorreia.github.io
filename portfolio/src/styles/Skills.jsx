@@ -8,7 +8,7 @@ export const Container = styled.div`
   background-image: url(${background});
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: ${({projects}) => projects ? `flex-start` : 'space-evenly'};
   align-items: center;
 `
 export const IconContainer = styled.div`
@@ -29,5 +29,5 @@ export const Title = styled.p`
   color: ${BROWN};
   font-size: 2rem;
   text-align: justify;
-  margin: ${({skill}) => skill ? 'none' : '4rem auto' };
+  margin: ${({projects}) => projects ? `5rem auto` : 'none'};
 `

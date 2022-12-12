@@ -1,11 +1,18 @@
 import { BtnNav, Column, Nav } from '../styles/Header';
 import { useDispatch, useSelector } from 'react-redux';
-import setNav from '../store/actions';
+import { setNav } from '../store/actions';
+import { useEffect } from 'react';
 
 function Navegator() {
   const dispatch = useDispatch();
-  const route = useSelector(({ navReducer }) => navReducer);
-  console.log('route: ', route);
+  const route = useSelector(({ navReducer }) => navReducer.section);
+  const perc = useSelector(({ navReducer }) => navReducer.percentage);
+
+  useEffect(() => {
+    if (perc < 25) dispatch(setNav('about'));
+    if (perc >= 25 && perc < 65) dispatch(setNav('skills'));
+    if (perc >= 65) dispatch(setNav('projects'));
+  }, [dispatch, perc]);
 
   return (
     <Column>
